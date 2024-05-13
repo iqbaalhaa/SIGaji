@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistem Informasi KUD</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bx-book-reader'></i>
+            <div class="logo-name"><span>SI </span>Kursus</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="index.html"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="siswa.html"><i class='bx bxs-user'></i>Siswa</a></li>
+            <li><a href="materi.html"><i class='bx bxs-book'></i>Materi</a></li>
+            <li><a href="jadwal.html"><i class='bx bx-calendar-event'></i>Jadwal</a></li>
+            <li><a href="pengguna.html"><i class='bx bx-user'></i>Pengguna</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Keluar
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">   
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Pengguna</h1>
+                </div>
+            </div>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    padding: 20px;
+                    background-color: #f4f4f4;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #d26319;
+                    color: white;
+                }
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+                .back-button {
+                    padding: 8px 16px;
+                    background-color: #d26319;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+                .back-button:hover {
+                    background-color: #d26319;
+                }
+            </style>
+        </head>
+        <body>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>username</th>
+                        <th>Password</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Naufal Fasya</td>
+                        <td>naufal123</td>
+                        <td>naufal123</td>
+                        <td>
+                            <a href="#">Edit</a> |
+                            <a href="#">Hapus</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Lisa Purnamasari</td>
+                        <td>lisapurna</td>
+                        <td>lisasecret</td>
+                        <td>
+                            <a href="#">Edit</a> |
+                            <a href="#">Hapus</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Rudi Hartono</td>
+                        <td>rudih123</td>
+                        <td>rudi2023</td>
+                        <td>
+                            <a href="#">Edit</a> |
+                            <a href="#">Hapus</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Siti Badriah</td>
+                        <td>sitib</td>
+                        <td>badriah89</td>
+                        <td>
+                            <a href="#">Edit</a> |
+                            <a href="#">Hapus</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="javascript:history.back()" class="back-button">Kembali</a>
+           
+
+            
+
+        </main>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+</html>
